@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <title>Struktur Surat Resmi</title>
+
+  <!-- meta tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- bootstrap css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <!-- my css -->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+  <section class="struktur-surat">
+    <div class="container mid">
+      <h1 class="header">Struktur Surat Resmi</h1>
+  
+      <section class="struktur kop-surat" role="button" data-toggle="modal" data-target="#kop-surat">Kop Surat</section>
+  
+      <section class="struktur tanggal" role="button" data-toggle="modal" data-target="#tanggal">Tanggal</section>
+  
+      <section class="struktur nomor" role="button" data-toggle="modal" data-target="#nomor">Nomor</section>
+  
+      <section class="struktur lampiran" role="button" data-toggle="modal" data-target="#lampiran">Lampiran</section>
+  
+      <section class="struktur perihal" role="button" data-toggle="modal" data-target="#perihal">Perihal</section>
+  
+      <section class="struktur tujuan" role="button" data-toggle="modal" data-target="#tujuan">Alamat Tujuan</section>
+  
+      <section class="struktur pembuka" role="button" data-toggle="modal" data-target="#pembuka">Salam Pembuka</section>
+  
+      <section class="struktur isi" role="button" data-toggle="modal" data-target="#isi">Isi Surat</section>
+  
+      <section class="struktur penutup" role="button" data-toggle="modal" data-target="#penutup">Salam Penutup</section>
+      
+      <section class="struktur akhir-surat" role="button" data-toggle="modal" data-target="#akhir">Nama, Jabatan, Ttd</section>
+    </div>
+  </section>
+ 
+  <section class="penjelasan">
+    <!-- Kop Surat -->
+    <div class="modal fade" id="kop-surat" tabindex="-1"    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Kop Surat</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            <p>
+              Kop surat menunjukkan detail informasi pembuat surat. Kop surat harus ditulis paling besar dari bagian surat lainnya. Biasanya terdiri dari 5 bagian yaitu :
+            </p>
+            <div class="row">
+              <div class="col-4">
+                <div class="list-group text-break" id="list-tab" role="tablist">
+                  
+                  <a class="list-group-item list-group-item-action active" id="list-logo-list" data-toggle="list" href="#list-logo" role="tab" aria-controls="logo">Logo</a>
+
+                  <a class="list-group-item list-group-item-action" id="list-nama-list" data-toggle="list" href="#list-nama" role="tab" aria-controls="nama">Nama Perusahaan</a>
+
+                  <a class="list-group-item list-group-item-action" id="list-alamat-list" data-toggle="list" href="#list-alamat" role="tab" aria-controls="alamat">Alamat Lengkap</a>
+
+                  <a class="list-group-item list-group-item-action" id="list-kodepos-list" data-toggle="list" href="#list-kodepos" role="tab" aria-controls="kodepos">Kode Pos</a>
+
+                  <a class="list-group-item list-group-item-action" id="list-kontak-list" data-toggle="list" href="#list-kontak" role="tab" aria-controls="kontak">Kontak</a>
+
+                  <a class="list-group-item list-group-item-action bg-success text-white" id="list-contoh-list" data-toggle="list" href="#list-contoh" role="tab" aria-controls="contoh">Contoh</a>
+
+                </div>
+              </div>
+              <div class="col-8">
+                <div class="tab-content" id="nav-tabContent">
+
+                  <div class="tab-pane fade show active" id="list-logo" role="tabpanel" aria-labelledby="list-logo-list">
+                    <p>
+                      Logo perusahaan dalam surat resmi berguna untuk identitas atau branding sebuah perusahaan.
+                    </p>
+                    <img src="img/logo.png" style="width: 30%;"></br>
+                    <img src="img/logo2.png" style="width: 30%;" class="mt-3">
+                  </div>
+                  
+                  <div class="tab-pane fade" id="list-nama" role="tabpanel" aria-labelledby="list-nama-list">
+                    <p>
+                      Nama perusahaan ditulis dengan huruf tebal dan ukuran yang besar.
+                    </p>
+                    <div class="alert alert-warning text-dark" role="alert">
+                      Penulisan PT tidak ditambahkan titik (.) pada akhirannya
+                    </div>
+                    <p>Misal :</p>
+                    <div class="alert alert-secondary" role="alert">
+                      <h4>PT BUMI GANTENG</h4>
+                      <h4>PT MANG ETAN</h4>
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="list-alamat" role="tabpanel" aria-labelledby="list-alamat-list">
+                    <p>
+                      Alamat pada kop surat harus lengkap dan detail yang biasanya terdiri dari nama jalan, nomor, kecamatan, dan kota.
+                    </p>
+                    <div class="alert alert-warning text-dark" role="alert">
+                      Penulisan Jalan tidak disingkat menjadi Jln.
+                    </div>
+                    <div class="alert alert-warning text-dark" role="alert">
+                      Penulisan nomor bisa disingkat menjadi No. (harus ada titiknya)
+                    </div>
+                    <p>Misal :</p>
+                    <div class="alert alert-secondary" role="alert">
+                      Jalan Majuterus No. 56<br>
+                      Pondok Etan - Tangerang
+                    </div>
+                    <div class="alert alert-secondary" role="alert">
+                      Jalan Tanparagu No. 12<br>
+                      Chicago - Cibaduyut
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="list-kodepos" role="tabpanel" aria-labelledby="list-kodepos-list">
+                    <p>
+                      Kode pos berbentuk angka yang berguna untuk menunjukkan kode pengiriman pos pada tiap - tiap daerah.
+                    </p>
+                    <p>
+                      Biasanya ditulis setelah nama provinsi.
+                    </p>
+                    <p>Misal :</p>
+                    <div class="alert alert-secondary" role="alert">
+                      Banten - 12345<br>
+                      Cibaduyut - 76321
+                    </div>
+                    <div class="alert alert-warning text-dark" role="alert">
+                      Kode pos di atas hanyalah contoh dan bukan asli. Jika anda mau mencari yang asli anda bisa klik <a href="https://kodeposku.com/" target="blank">link ini</a>
+                    </div >
+                  </div>
+
+                  <div class="tab-pane fade" id="list-kontak" role="tabpanel" aria-labelledby="list-kontak-list">
+                    <p>Bagian kontak berisi informasi untuk menghubungi perusahaan kita. Biasanya terdiri dari nomor telepon, email, alamat website, dll</p>
+                    <div class="alert alert-warning text-dark" role="alert">
+                      Penulisan Telepon tidak disingkat menjadi Telp.
+                    </div >
+                    <p>Misal :</p>
+                    <div class="alert alert-secondary" role="alert">
+                      Telepon : 081234567<br>
+                      Email : mautauaja@gmail.com<br>
+                      Website : www.bumiganteng.com
+                    </div>
+                  </div>
+
+                  <div class="tab-pane fade" id="list-contoh" role="tabpanel" aria-labelledby="list-contoh-list">
+                    <img src="img/logo.png" style="width: 30%;" class="mb-3">
+                    <h4>PT BUMI GANTENG</h4>
+                    <p>Jalan Majuterus No. 56<br>Pondok Etan - Tangerang Timur<br>Banten - 12345</p>
+                    <p>Telepon : 08100101001<br>Email : bumiganteng@gmail.com<br>Website : www.bumiganteng.com</p>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>       
+          </div>         
+        </div>
+      </div>
+    </div>
+    <!-- End Kop Surat -->
+
+    <!-- Tanggal -->
+    <div class="modal fade" id="tanggal" tabindex="-1"    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Tanggal</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reprehenderit maxime repellat. Beatae, repellat quis laudantium atque eaque provident? Culpa minima necessitatibus enim quos accusamus? Provident neque porro debitis reiciendis quae cumque saepe veritatis accusamus? Iusto atque animi, commodi consequuntur corrupti ea quae. Excepturi vel laudantium fugiat sunt. Alias quis vitae veniam iure repudiandae rerum reiciendis eligendi maiores, minima ducimus adipisci, quia facilis vero expedita asperiores tenetur quibusdam eveniet? Error, sequi aspernatur qui ab repudiandae exercitationem est praesentium optio quibusdam nihil quasi culpa nesciunt dolorum quod. Exercitationem ut vero voluptatem harum error deserunt dolor praesentium porro eos, itaque maiores est corrupti eum rerum officiis vitae ad eveniet. Harum, accusamus molestiae! Similique ipsa debitis totam illo ad expedita quasi numquam! Sequi tempore necessitatibus amet nam accusamus consequatur reprehenderit quisquam laudantium doloremque in suscipit praesentium libero dignissimos voluptatibus ad dolorum nostrum harum facere eaque, at iste rem cumque assumenda! Minus at aliquid aperiam qui vel repellat corrupti totam reiciendis consequuntur nisi? Fugit minima quia numquam, maiores, officiis porro nostrum quidem nam non vel perspiciatis facere officia quibusdam error corrupti sit. Cupiditate quod dolores veniam eaque obcaecati totam in odio excepturi eveniet dolorum deserunt quaerat, eligendi ipsum quasi labore reprehenderit cumque, omnis quidem at iste facilis consequuntur! Consequatur dignissimos expedita, iusto adipisci nesciunt quod a ipsum modi quidem non voluptatibus aliquam ex quos aliquid sint incidunt, officia porro debitis! Sunt numquam quisquam, tempore eligendi odit eius dolorum molestiae autem cum obcaecati rerum corrupti, voluptates esse animi voluptas? Praesentium illum impedit perferendis rerum, architecto eaque beatae nisi ratione eos rem cupiditate modi soluta labore aspernatur aliquid quos harum deleniti perspiciatis a deserunt. Temporibus facilis eos perferendis. Asperiores accusantium repellendus sunt iusto sed non error quaerat ex, suscipit perspiciatis! Vero quae dolor, repudiandae necessitatibus assumenda voluptates ducimus, neque laboriosam vel dolorem quam corporis excepturi ab deserunt distinctio praesentium laborum nemo tempore alias aliquid at nam! Quasi pariatur consectetur eius totam itaque modi labore voluptate est officia ut, iste officiis hic repellendus saepe doloremque ipsa sapiente beatae. Expedita similique eligendi ipsa, ullam id ex animi, quas voluptatem qui nostrum nemo vitae in enim ab voluptatibus excepturi consequuntur! Fuga, eveniet cum. Alias accusantium, ipsum sed atque quidem doloremque sapiente, minus veritatis similique harum animi repellat ullam laborum. Aperiam quisquam sit, in est nostrum tempora necessitatibus accusantium ratione, non laudantium enim illo, excepturi dolorum fugit sunt. Fugit non saepe praesentium atque deserunt illo unde fugiat voluptate voluptas repellat. Mollitia error odit cumque aperiam architecto quam quasi distinctio deleniti, incidunt cupiditate sequi perspiciatis similique dolore facilis quod reprehenderit laudantium molestias excepturi veritatis tenetur dolorum, impedit saepe placeat atque. Modi ipsa soluta porro iure, ad deleniti doloremque ipsum placeat commodi officiis sapiente facilis voluptates, cum nihil quibusdam quam accusantium inventore impedit, esse quo consectetur? Soluta officia voluptas amet excepturi, eos cum, laborum libero animi quod repellendus dignissimos quos recusandae deserunt sapiente incidunt ipsam. Cupiditate optio suscipit porro molestiae placeat quidem, explicabo corporis rem libero, tempore assumenda fuga eligendi temporibus maiores laboriosam quisquam aliquid rerum. Nam repellendus delectus esse sint dicta!
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    <!-- End Tanggal -->
+
+    <!-- Nomor -->
+    <div class="modal fade" id="nomor" tabindex="-1"    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Nomor Surat</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reprehenderit maxime repellat. Beatae, repellat quis laudantium atque eaque provident? Culpa minima necessitatibus enim quos accusamus? Provident neque porro debitis reiciendis quae cumque saepe veritatis accusamus? Iusto atque animi, commodi consequuntur corrupti ea quae. Excepturi vel laudantium fugiat sunt. Alias quis vitae veniam iure repudiandae rerum reiciendis eligendi maiores, minima ducimus adipisci, quia facilis vero expedita asperiores tenetur quibusdam eveniet? Error, sequi aspernatur qui ab repudiandae exercitationem est praesentium optio quibusdam nihil quasi culpa nesciunt dolorum quod. Exercitationem ut vero voluptatem harum error deserunt dolor praesentium porro eos, itaque maiores est corrupti eum rerum officiis vitae ad eveniet. Harum, accusamus molestiae! Similique ipsa debitis totam illo ad expedita quasi numquam! Sequi tempore necessitatibus amet nam accusamus consequatur reprehenderit quisquam laudantium doloremque in suscipit praesentium libero dignissimos voluptatibus ad dolorum nostrum harum facere eaque, at iste rem cumque assumenda! Minus at aliquid aperiam qui vel repellat corrupti totam reiciendis consequuntur nisi? Fugit minima quia numquam, maiores, officiis porro nostrum quidem nam non vel perspiciatis facere officia quibusdam error corrupti sit. Cupiditate quod dolores veniam eaque obcaecati totam in odio excepturi eveniet dolorum deserunt quaerat, eligendi ipsum quasi labore reprehenderit cumque, omnis quidem at iste facilis consequuntur! Consequatur dignissimos expedita, iusto adipisci nesciunt quod a ipsum modi quidem non voluptatibus aliquam ex quos aliquid sint incidunt, officia porro debitis! Sunt numquam quisquam, tempore eligendi odit eius dolorum molestiae autem cum obcaecati rerum corrupti, voluptates esse animi voluptas? Praesentium illum impedit perferendis rerum, architecto eaque beatae nisi ratione eos rem cupiditate modi soluta labore aspernatur aliquid quos harum deleniti perspiciatis a deserunt. Temporibus facilis eos perferendis. Asperiores accusantium repellendus sunt iusto sed non error quaerat ex, suscipit perspiciatis! Vero quae dolor, repudiandae necessitatibus assumenda voluptates ducimus, neque laboriosam vel dolorem quam corporis excepturi ab deserunt distinctio praesentium laborum nemo tempore alias aliquid at nam! Quasi pariatur consectetur eius totam itaque modi labore voluptate est officia ut, iste officiis hic repellendus saepe doloremque ipsa sapiente beatae. Expedita similique eligendi ipsa, ullam id ex animi, quas voluptatem qui nostrum nemo vitae in enim ab voluptatibus excepturi consequuntur! Fuga, eveniet cum. Alias accusantium, ipsum sed atque quidem doloremque sapiente, minus veritatis similique harum animi repellat ullam laborum. Aperiam quisquam sit, in est nostrum tempora necessitatibus accusantium ratione, non laudantium enim illo, excepturi dolorum fugit sunt. Fugit non saepe praesentium atque deserunt illo unde fugiat voluptate voluptas repellat. Mollitia error odit cumque aperiam architecto quam quasi distinctio deleniti, incidunt cupiditate sequi perspiciatis similique dolore facilis quod reprehenderit laudantium molestias excepturi veritatis tenetur dolorum, impedit saepe placeat atque. Modi ipsa soluta porro iure, ad deleniti doloremque ipsum placeat commodi officiis sapiente facilis voluptates, cum nihil quibusdam quam accusantium inventore impedit, esse quo consectetur? Soluta officia voluptas amet excepturi, eos cum, laborum libero animi quod repellendus dignissimos quos recusandae deserunt sapiente incidunt ipsam. Cupiditate optio suscipit porro molestiae placeat quidem, explicabo corporis rem libero, tempore assumenda fuga eligendi temporibus maiores laboriosam quisquam aliquid rerum. Nam repellendus delectus esse sint dicta!
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    <!-- End Nomor -->
+
+    <!-- Lampiran -->
+    <div class="modal fade" id="lampiran" tabindex="-1"    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Lampiran</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reprehenderit maxime repellat. Beatae, repellat quis laudantium atque eaque provident? Culpa minima necessitatibus enim quos accusamus? Provident neque porro debitis reiciendis quae cumque saepe veritatis accusamus? Iusto atque animi, commodi consequuntur corrupti ea quae. Excepturi vel laudantium fugiat sunt. Alias quis vitae veniam iure repudiandae rerum reiciendis eligendi maiores, minima ducimus adipisci, quia facilis vero expedita asperiores tenetur quibusdam eveniet? Error, sequi aspernatur qui ab repudiandae exercitationem est praesentium optio quibusdam nihil quasi culpa nesciunt dolorum quod. Exercitationem ut vero voluptatem harum error deserunt dolor praesentium porro eos, itaque maiores est corrupti eum rerum officiis vitae ad eveniet. Harum, accusamus molestiae! Similique ipsa debitis totam illo ad expedita quasi numquam! Sequi tempore necessitatibus amet nam accusamus consequatur reprehenderit quisquam laudantium doloremque in suscipit praesentium libero dignissimos voluptatibus ad dolorum nostrum harum facere eaque, at iste rem cumque assumenda! Minus at aliquid aperiam qui vel repellat corrupti totam reiciendis consequuntur nisi? Fugit minima quia numquam, maiores, officiis porro nostrum quidem nam non vel perspiciatis facere officia quibusdam error corrupti sit. Cupiditate quod dolores veniam eaque obcaecati totam in odio excepturi eveniet dolorum deserunt quaerat, eligendi ipsum quasi labore reprehenderit cumque, omnis quidem at iste facilis consequuntur! Consequatur dignissimos expedita, iusto adipisci nesciunt quod a ipsum modi quidem non voluptatibus aliquam ex quos aliquid sint incidunt, officia porro debitis! Sunt numquam quisquam, tempore eligendi odit eius dolorum molestiae autem cum obcaecati rerum corrupti, voluptates esse animi voluptas? Praesentium illum impedit perferendis rerum, architecto eaque beatae nisi ratione eos rem cupiditate modi soluta labore aspernatur aliquid quos harum deleniti perspiciatis a deserunt. Temporibus facilis eos perferendis. Asperiores accusantium repellendus sunt iusto sed non error quaerat ex, suscipit perspiciatis! Vero quae dolor, repudiandae necessitatibus assumenda voluptates ducimus, neque laboriosam vel dolorem quam corporis excepturi ab deserunt distinctio praesentium laborum nemo tempore alias aliquid at nam! Quasi pariatur consectetur eius totam itaque modi labore voluptate est officia ut, iste officiis hic repellendus saepe doloremque ipsa sapiente beatae. Expedita similique eligendi ipsa, ullam id ex animi, quas voluptatem qui nostrum nemo vitae in enim ab voluptatibus excepturi consequuntur! Fuga, eveniet cum. Alias accusantium, ipsum sed atque quidem doloremque sapiente, minus veritatis similique harum animi repellat ullam laborum. Aperiam quisquam sit, in est nostrum tempora necessitatibus accusantium ratione, non laudantium enim illo, excepturi dolorum fugit sunt. Fugit non saepe praesentium atque deserunt illo unde fugiat voluptate voluptas repellat. Mollitia error odit cumque aperiam architecto quam quasi distinctio deleniti, incidunt cupiditate sequi perspiciatis similique dolore facilis quod reprehenderit laudantium molestias excepturi veritatis tenetur dolorum, impedit saepe placeat atque. Modi ipsa soluta porro iure, ad deleniti doloremque ipsum placeat commodi officiis sapiente facilis voluptates, cum nihil quibusdam quam accusantium inventore impedit, esse quo consectetur? Soluta officia voluptas amet excepturi, eos cum, laborum libero animi quod repellendus dignissimos quos recusandae deserunt sapiente incidunt ipsam. Cupiditate optio suscipit porro molestiae placeat quidem, explicabo corporis rem libero, tempore assumenda fuga eligendi temporibus maiores laboriosam quisquam aliquid rerum. Nam repellendus delectus esse sint dicta!
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    <!-- End Lampiran -->
+
+    <!-- Perihal -->
+    <div class="modal fade" id="perihal" tabindex="-1"    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Perihal</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reprehenderit maxime repellat. Beatae, repellat quis laudantium atque eaque provident? Culpa minima necessitatibus enim quos accusamus? Provident neque porro debitis reiciendis quae cumque saepe veritatis accusamus? Iusto atque animi, commodi consequuntur corrupti ea quae. Excepturi vel laudantium fugiat sunt. Alias quis vitae veniam iure repudiandae rerum reiciendis eligendi maiores, minima ducimus adipisci, quia facilis vero expedita asperiores tenetur quibusdam eveniet? Error, sequi aspernatur qui ab repudiandae exercitationem est praesentium optio quibusdam nihil quasi culpa nesciunt dolorum quod. Exercitationem ut vero voluptatem harum error deserunt dolor praesentium porro eos, itaque maiores est corrupti eum rerum officiis vitae ad eveniet. Harum, accusamus molestiae! Similique ipsa debitis totam illo ad expedita quasi numquam! Sequi tempore necessitatibus amet nam accusamus consequatur reprehenderit quisquam laudantium doloremque in suscipit praesentium libero dignissimos voluptatibus ad dolorum nostrum harum facere eaque, at iste rem cumque assumenda! Minus at aliquid aperiam qui vel repellat corrupti totam reiciendis consequuntur nisi? Fugit minima quia numquam, maiores, officiis porro nostrum quidem nam non vel perspiciatis facere officia quibusdam error corrupti sit. Cupiditate quod dolores veniam eaque obcaecati totam in odio excepturi eveniet dolorum deserunt quaerat, eligendi ipsum quasi labore reprehenderit cumque, omnis quidem at iste facilis consequuntur! Consequatur dignissimos expedita, iusto adipisci nesciunt quod a ipsum modi quidem non voluptatibus aliquam ex quos aliquid sint incidunt, officia porro debitis! Sunt numquam quisquam, tempore eligendi odit eius dolorum molestiae autem cum obcaecati rerum corrupti, voluptates esse animi voluptas? Praesentium illum impedit perferendis rerum, architecto eaque beatae nisi ratione eos rem cupiditate modi soluta labore aspernatur aliquid quos harum deleniti perspiciatis a deserunt. Temporibus facilis eos perferendis. Asperiores accusantium repellendus sunt iusto sed non error quaerat ex, suscipit perspiciatis! Vero quae dolor, repudiandae necessitatibus assumenda voluptates ducimus, neque laboriosam vel dolorem quam corporis excepturi ab deserunt distinctio praesentium laborum nemo tempore alias aliquid at nam! Quasi pariatur consectetur eius totam itaque modi labore voluptate est officia ut, iste officiis hic repellendus saepe doloremque ipsa sapiente beatae. Expedita similique eligendi ipsa, ullam id ex animi, quas voluptatem qui nostrum nemo vitae in enim ab voluptatibus excepturi consequuntur! Fuga, eveniet cum. Alias accusantium, ipsum sed atque quidem doloremque sapiente, minus veritatis similique harum animi repellat ullam laborum. Aperiam quisquam sit, in est nostrum tempora necessitatibus accusantium ratione, non laudantium enim illo, excepturi dolorum fugit sunt. Fugit non saepe praesentium atque deserunt illo unde fugiat voluptate voluptas repellat. Mollitia error odit cumque aperiam architecto quam quasi distinctio deleniti, incidunt cupiditate sequi perspiciatis similique dolore facilis quod reprehenderit laudantium molestias excepturi veritatis tenetur dolorum, impedit saepe placeat atque. Modi ipsa soluta porro iure, ad deleniti doloremque ipsum placeat commodi officiis sapiente facilis voluptates, cum nihil quibusdam quam accusantium inventore impedit, esse quo consectetur? Soluta officia voluptas amet excepturi, eos cum, laborum libero animi quod repellendus dignissimos quos recusandae deserunt sapiente incidunt ipsam. Cupiditate optio suscipit porro molestiae placeat quidem, explicabo corporis rem libero, tempore assumenda fuga eligendi temporibus maiores laboriosam quisquam aliquid rerum. Nam repellendus delectus esse sint dicta!
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    <!-- End Perihal -->
+
+    <!-- Tujuan -->
+    <div class="modal fade" id="tujuan" tabindex="-1"    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Alamat Tujuan</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reprehenderit maxime repellat. Beatae, repellat quis laudantium atque eaque provident? Culpa minima necessitatibus enim quos accusamus? Provident neque porro debitis reiciendis quae cumque saepe veritatis accusamus? Iusto atque animi, commodi consequuntur corrupti ea quae. Excepturi vel laudantium fugiat sunt. Alias quis vitae veniam iure repudiandae rerum reiciendis eligendi maiores, minima ducimus adipisci, quia facilis vero expedita asperiores tenetur quibusdam eveniet? Error, sequi aspernatur qui ab repudiandae exercitationem est praesentium optio quibusdam nihil quasi culpa nesciunt dolorum quod. Exercitationem ut vero voluptatem harum error deserunt dolor praesentium porro eos, itaque maiores est corrupti eum rerum officiis vitae ad eveniet. Harum, accusamus molestiae! Similique ipsa debitis totam illo ad expedita quasi numquam! Sequi tempore necessitatibus amet nam accusamus consequatur reprehenderit quisquam laudantium doloremque in suscipit praesentium libero dignissimos voluptatibus ad dolorum nostrum harum facere eaque, at iste rem cumque assumenda! Minus at aliquid aperiam qui vel repellat corrupti totam reiciendis consequuntur nisi? Fugit minima quia numquam, maiores, officiis porro nostrum quidem nam non vel perspiciatis facere officia quibusdam error corrupti sit. Cupiditate quod dolores veniam eaque obcaecati totam in odio excepturi eveniet dolorum deserunt quaerat, eligendi ipsum quasi labore reprehenderit cumque, omnis quidem at iste facilis consequuntur! Consequatur dignissimos expedita, iusto adipisci nesciunt quod a ipsum modi quidem non voluptatibus aliquam ex quos aliquid sint incidunt, officia porro debitis! Sunt numquam quisquam, tempore eligendi odit eius dolorum molestiae autem cum obcaecati rerum corrupti, voluptates esse animi voluptas? Praesentium illum impedit perferendis rerum, architecto eaque beatae nisi ratione eos rem cupiditate modi soluta labore aspernatur aliquid quos harum deleniti perspiciatis a deserunt. Temporibus facilis eos perferendis. Asperiores accusantium repellendus sunt iusto sed non error quaerat ex, suscipit perspiciatis! Vero quae dolor, repudiandae necessitatibus assumenda voluptates ducimus, neque laboriosam vel dolorem quam corporis excepturi ab deserunt distinctio praesentium laborum nemo tempore alias aliquid at nam! Quasi pariatur consectetur eius totam itaque modi labore voluptate est officia ut, iste officiis hic repellendus saepe doloremque ipsa sapiente beatae. Expedita similique eligendi ipsa, ullam id ex animi, quas voluptatem qui nostrum nemo vitae in enim ab voluptatibus excepturi consequuntur! Fuga, eveniet cum. Alias accusantium, ipsum sed atque quidem doloremque sapiente, minus veritatis similique harum animi repellat ullam laborum. Aperiam quisquam sit, in est nostrum tempora necessitatibus accusantium ratione, non laudantium enim illo, excepturi dolorum fugit sunt. Fugit non saepe praesentium atque deserunt illo unde fugiat voluptate voluptas repellat. Mollitia error odit cumque aperiam architecto quam quasi distinctio deleniti, incidunt cupiditate sequi perspiciatis similique dolore facilis quod reprehenderit laudantium molestias excepturi veritatis tenetur dolorum, impedit saepe placeat atque. Modi ipsa soluta porro iure, ad deleniti doloremque ipsum placeat commodi officiis sapiente facilis voluptates, cum nihil quibusdam quam accusantium inventore impedit, esse quo consectetur? Soluta officia voluptas amet excepturi, eos cum, laborum libero animi quod repellendus dignissimos quos recusandae deserunt sapiente incidunt ipsam. Cupiditate optio suscipit porro molestiae placeat quidem, explicabo corporis rem libero, tempore assumenda fuga eligendi temporibus maiores laboriosam quisquam aliquid rerum. Nam repellendus delectus esse sint dicta!
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    <!-- End Tujuan -->
+
+    <!-- Pembuka -->
+    <div class="modal fade" id="pembuka" tabindex="-1"    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Salam Pembuka</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reprehenderit maxime repellat. Beatae, repellat quis laudantium atque eaque provident? Culpa minima necessitatibus enim quos accusamus? Provident neque porro debitis reiciendis quae cumque saepe veritatis accusamus? Iusto atque animi, commodi consequuntur corrupti ea quae. Excepturi vel laudantium fugiat sunt. Alias quis vitae veniam iure repudiandae rerum reiciendis eligendi maiores, minima ducimus adipisci, quia facilis vero expedita asperiores tenetur quibusdam eveniet? Error, sequi aspernatur qui ab repudiandae exercitationem est praesentium optio quibusdam nihil quasi culpa nesciunt dolorum quod. Exercitationem ut vero voluptatem harum error deserunt dolor praesentium porro eos, itaque maiores est corrupti eum rerum officiis vitae ad eveniet. Harum, accusamus molestiae! Similique ipsa debitis totam illo ad expedita quasi numquam! Sequi tempore necessitatibus amet nam accusamus consequatur reprehenderit quisquam laudantium doloremque in suscipit praesentium libero dignissimos voluptatibus ad dolorum nostrum harum facere eaque, at iste rem cumque assumenda! Minus at aliquid aperiam qui vel repellat corrupti totam reiciendis consequuntur nisi? Fugit minima quia numquam, maiores, officiis porro nostrum quidem nam non vel perspiciatis facere officia quibusdam error corrupti sit. Cupiditate quod dolores veniam eaque obcaecati totam in odio excepturi eveniet dolorum deserunt quaerat, eligendi ipsum quasi labore reprehenderit cumque, omnis quidem at iste facilis consequuntur! Consequatur dignissimos expedita, iusto adipisci nesciunt quod a ipsum modi quidem non voluptatibus aliquam ex quos aliquid sint incidunt, officia porro debitis! Sunt numquam quisquam, tempore eligendi odit eius dolorum molestiae autem cum obcaecati rerum corrupti, voluptates esse animi voluptas? Praesentium illum impedit perferendis rerum, architecto eaque beatae nisi ratione eos rem cupiditate modi soluta labore aspernatur aliquid quos harum deleniti perspiciatis a deserunt. Temporibus facilis eos perferendis. Asperiores accusantium repellendus sunt iusto sed non error quaerat ex, suscipit perspiciatis! Vero quae dolor, repudiandae necessitatibus assumenda voluptates ducimus, neque laboriosam vel dolorem quam corporis excepturi ab deserunt distinctio praesentium laborum nemo tempore alias aliquid at nam! Quasi pariatur consectetur eius totam itaque modi labore voluptate est officia ut, iste officiis hic repellendus saepe doloremque ipsa sapiente beatae. Expedita similique eligendi ipsa, ullam id ex animi, quas voluptatem qui nostrum nemo vitae in enim ab voluptatibus excepturi consequuntur! Fuga, eveniet cum. Alias accusantium, ipsum sed atque quidem doloremque sapiente, minus veritatis similique harum animi repellat ullam laborum. Aperiam quisquam sit, in est nostrum tempora necessitatibus accusantium ratione, non laudantium enim illo, excepturi dolorum fugit sunt. Fugit non saepe praesentium atque deserunt illo unde fugiat voluptate voluptas repellat. Mollitia error odit cumque aperiam architecto quam quasi distinctio deleniti, incidunt cupiditate sequi perspiciatis similique dolore facilis quod reprehenderit laudantium molestias excepturi veritatis tenetur dolorum, impedit saepe placeat atque. Modi ipsa soluta porro iure, ad deleniti doloremque ipsum placeat commodi officiis sapiente facilis voluptates, cum nihil quibusdam quam accusantium inventore impedit, esse quo consectetur? Soluta officia voluptas amet excepturi, eos cum, laborum libero animi quod repellendus dignissimos quos recusandae deserunt sapiente incidunt ipsam. Cupiditate optio suscipit porro molestiae placeat quidem, explicabo corporis rem libero, tempore assumenda fuga eligendi temporibus maiores laboriosam quisquam aliquid rerum. Nam repellendus delectus esse sint dicta!
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    <!-- End Pembuka -->
+
+    <!-- Isi -->
+    <div class="modal fade" id="isi" tabindex="-1"    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Isi Surat</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reprehenderit maxime repellat. Beatae, repellat quis laudantium atque eaque provident? Culpa minima necessitatibus enim quos accusamus? Provident neque porro debitis reiciendis quae cumque saepe veritatis accusamus? Iusto atque animi, commodi consequuntur corrupti ea quae. Excepturi vel laudantium fugiat sunt. Alias quis vitae veniam iure repudiandae rerum reiciendis eligendi maiores, minima ducimus adipisci, quia facilis vero expedita asperiores tenetur quibusdam eveniet? Error, sequi aspernatur qui ab repudiandae exercitationem est praesentium optio quibusdam nihil quasi culpa nesciunt dolorum quod. Exercitationem ut vero voluptatem harum error deserunt dolor praesentium porro eos, itaque maiores est corrupti eum rerum officiis vitae ad eveniet. Harum, accusamus molestiae! Similique ipsa debitis totam illo ad expedita quasi numquam! Sequi tempore necessitatibus amet nam accusamus consequatur reprehenderit quisquam laudantium doloremque in suscipit praesentium libero dignissimos voluptatibus ad dolorum nostrum harum facere eaque, at iste rem cumque assumenda! Minus at aliquid aperiam qui vel repellat corrupti totam reiciendis consequuntur nisi? Fugit minima quia numquam, maiores, officiis porro nostrum quidem nam non vel perspiciatis facere officia quibusdam error corrupti sit. Cupiditate quod dolores veniam eaque obcaecati totam in odio excepturi eveniet dolorum deserunt quaerat, eligendi ipsum quasi labore reprehenderit cumque, omnis quidem at iste facilis consequuntur! Consequatur dignissimos expedita, iusto adipisci nesciunt quod a ipsum modi quidem non voluptatibus aliquam ex quos aliquid sint incidunt, officia porro debitis! Sunt numquam quisquam, tempore eligendi odit eius dolorum molestiae autem cum obcaecati rerum corrupti, voluptates esse animi voluptas? Praesentium illum impedit perferendis rerum, architecto eaque beatae nisi ratione eos rem cupiditate modi soluta labore aspernatur aliquid quos harum deleniti perspiciatis a deserunt. Temporibus facilis eos perferendis. Asperiores accusantium repellendus sunt iusto sed non error quaerat ex, suscipit perspiciatis! Vero quae dolor, repudiandae necessitatibus assumenda voluptates ducimus, neque laboriosam vel dolorem quam corporis excepturi ab deserunt distinctio praesentium laborum nemo tempore alias aliquid at nam! Quasi pariatur consectetur eius totam itaque modi labore voluptate est officia ut, iste officiis hic repellendus saepe doloremque ipsa sapiente beatae. Expedita similique eligendi ipsa, ullam id ex animi, quas voluptatem qui nostrum nemo vitae in enim ab voluptatibus excepturi consequuntur! Fuga, eveniet cum. Alias accusantium, ipsum sed atque quidem doloremque sapiente, minus veritatis similique harum animi repellat ullam laborum. Aperiam quisquam sit, in est nostrum tempora necessitatibus accusantium ratione, non laudantium enim illo, excepturi dolorum fugit sunt. Fugit non saepe praesentium atque deserunt illo unde fugiat voluptate voluptas repellat. Mollitia error odit cumque aperiam architecto quam quasi distinctio deleniti, incidunt cupiditate sequi perspiciatis similique dolore facilis quod reprehenderit laudantium molestias excepturi veritatis tenetur dolorum, impedit saepe placeat atque. Modi ipsa soluta porro iure, ad deleniti doloremque ipsum placeat commodi officiis sapiente facilis voluptates, cum nihil quibusdam quam accusantium inventore impedit, esse quo consectetur? Soluta officia voluptas amet excepturi, eos cum, laborum libero animi quod repellendus dignissimos quos recusandae deserunt sapiente incidunt ipsam. Cupiditate optio suscipit porro molestiae placeat quidem, explicabo corporis rem libero, tempore assumenda fuga eligendi temporibus maiores laboriosam quisquam aliquid rerum. Nam repellendus delectus esse sint dicta!
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    <!-- End Isi -->
+
+    <!-- Penutup -->
+    <div class="modal fade" id="penutup" tabindex="-1"    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Penutup Surat</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reprehenderit maxime repellat. Beatae, repellat quis laudantium atque eaque provident? Culpa minima necessitatibus enim quos accusamus? Provident neque porro debitis reiciendis quae cumque saepe veritatis accusamus? Iusto atque animi, commodi consequuntur corrupti ea quae. Excepturi vel laudantium fugiat sunt. Alias quis vitae veniam iure repudiandae rerum reiciendis eligendi maiores, minima ducimus adipisci, quia facilis vero expedita asperiores tenetur quibusdam eveniet? Error, sequi aspernatur qui ab repudiandae exercitationem est praesentium optio quibusdam nihil quasi culpa nesciunt dolorum quod. Exercitationem ut vero voluptatem harum error deserunt dolor praesentium porro eos, itaque maiores est corrupti eum rerum officiis vitae ad eveniet. Harum, accusamus molestiae! Similique ipsa debitis totam illo ad expedita quasi numquam! Sequi tempore necessitatibus amet nam accusamus consequatur reprehenderit quisquam laudantium doloremque in suscipit praesentium libero dignissimos voluptatibus ad dolorum nostrum harum facere eaque, at iste rem cumque assumenda! Minus at aliquid aperiam qui vel repellat corrupti totam reiciendis consequuntur nisi? Fugit minima quia numquam, maiores, officiis porro nostrum quidem nam non vel perspiciatis facere officia quibusdam error corrupti sit. Cupiditate quod dolores veniam eaque obcaecati totam in odio excepturi eveniet dolorum deserunt quaerat, eligendi ipsum quasi labore reprehenderit cumque, omnis quidem at iste facilis consequuntur! Consequatur dignissimos expedita, iusto adipisci nesciunt quod a ipsum modi quidem non voluptatibus aliquam ex quos aliquid sint incidunt, officia porro debitis! Sunt numquam quisquam, tempore eligendi odit eius dolorum molestiae autem cum obcaecati rerum corrupti, voluptates esse animi voluptas? Praesentium illum impedit perferendis rerum, architecto eaque beatae nisi ratione eos rem cupiditate modi soluta labore aspernatur aliquid quos harum deleniti perspiciatis a deserunt. Temporibus facilis eos perferendis. Asperiores accusantium repellendus sunt iusto sed non error quaerat ex, suscipit perspiciatis! Vero quae dolor, repudiandae necessitatibus assumenda voluptates ducimus, neque laboriosam vel dolorem quam corporis excepturi ab deserunt distinctio praesentium laborum nemo tempore alias aliquid at nam! Quasi pariatur consectetur eius totam itaque modi labore voluptate est officia ut, iste officiis hic repellendus saepe doloremque ipsa sapiente beatae. Expedita similique eligendi ipsa, ullam id ex animi, quas voluptatem qui nostrum nemo vitae in enim ab voluptatibus excepturi consequuntur! Fuga, eveniet cum. Alias accusantium, ipsum sed atque quidem doloremque sapiente, minus veritatis similique harum animi repellat ullam laborum. Aperiam quisquam sit, in est nostrum tempora necessitatibus accusantium ratione, non laudantium enim illo, excepturi dolorum fugit sunt. Fugit non saepe praesentium atque deserunt illo unde fugiat voluptate voluptas repellat. Mollitia error odit cumque aperiam architecto quam quasi distinctio deleniti, incidunt cupiditate sequi perspiciatis similique dolore facilis quod reprehenderit laudantium molestias excepturi veritatis tenetur dolorum, impedit saepe placeat atque. Modi ipsa soluta porro iure, ad deleniti doloremque ipsum placeat commodi officiis sapiente facilis voluptates, cum nihil quibusdam quam accusantium inventore impedit, esse quo consectetur? Soluta officia voluptas amet excepturi, eos cum, laborum libero animi quod repellendus dignissimos quos recusandae deserunt sapiente incidunt ipsam. Cupiditate optio suscipit porro molestiae placeat quidem, explicabo corporis rem libero, tempore assumenda fuga eligendi temporibus maiores laboriosam quisquam aliquid rerum. Nam repellendus delectus esse sint dicta!
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    <!-- End Penutup -->
+
+    <!-- Akhir -->
+    <div class="modal fade" id="akhir" tabindex="-1"    aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-scrollable">
+
+        <div class="modal-content">
+
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Akhir Surat</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+
+          <div class="modal-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni reprehenderit maxime repellat. Beatae, repellat quis laudantium atque eaque provident? Culpa minima necessitatibus enim quos accusamus? Provident neque porro debitis reiciendis quae cumque saepe veritatis accusamus? Iusto atque animi, commodi consequuntur corrupti ea quae. Excepturi vel laudantium fugiat sunt. Alias quis vitae veniam iure repudiandae rerum reiciendis eligendi maiores, minima ducimus adipisci, quia facilis vero expedita asperiores tenetur quibusdam eveniet? Error, sequi aspernatur qui ab repudiandae exercitationem est praesentium optio quibusdam nihil quasi culpa nesciunt dolorum quod. Exercitationem ut vero voluptatem harum error deserunt dolor praesentium porro eos, itaque maiores est corrupti eum rerum officiis vitae ad eveniet. Harum, accusamus molestiae! Similique ipsa debitis totam illo ad expedita quasi numquam! Sequi tempore necessitatibus amet nam accusamus consequatur reprehenderit quisquam laudantium doloremque in suscipit praesentium libero dignissimos voluptatibus ad dolorum nostrum harum facere eaque, at iste rem cumque assumenda! Minus at aliquid aperiam qui vel repellat corrupti totam reiciendis consequuntur nisi? Fugit minima quia numquam, maiores, officiis porro nostrum quidem nam non vel perspiciatis facere officia quibusdam error corrupti sit. Cupiditate quod dolores veniam eaque obcaecati totam in odio excepturi eveniet dolorum deserunt quaerat, eligendi ipsum quasi labore reprehenderit cumque, omnis quidem at iste facilis consequuntur! Consequatur dignissimos expedita, iusto adipisci nesciunt quod a ipsum modi quidem non voluptatibus aliquam ex quos aliquid sint incidunt, officia porro debitis! Sunt numquam quisquam, tempore eligendi odit eius dolorum molestiae autem cum obcaecati rerum corrupti, voluptates esse animi voluptas? Praesentium illum impedit perferendis rerum, architecto eaque beatae nisi ratione eos rem cupiditate modi soluta labore aspernatur aliquid quos harum deleniti perspiciatis a deserunt. Temporibus facilis eos perferendis. Asperiores accusantium repellendus sunt iusto sed non error quaerat ex, suscipit perspiciatis! Vero quae dolor, repudiandae necessitatibus assumenda voluptates ducimus, neque laboriosam vel dolorem quam corporis excepturi ab deserunt distinctio praesentium laborum nemo tempore alias aliquid at nam! Quasi pariatur consectetur eius totam itaque modi labore voluptate est officia ut, iste officiis hic repellendus saepe doloremque ipsa sapiente beatae. Expedita similique eligendi ipsa, ullam id ex animi, quas voluptatem qui nostrum nemo vitae in enim ab voluptatibus excepturi consequuntur! Fuga, eveniet cum. Alias accusantium, ipsum sed atque quidem doloremque sapiente, minus veritatis similique harum animi repellat ullam laborum. Aperiam quisquam sit, in est nostrum tempora necessitatibus accusantium ratione, non laudantium enim illo, excepturi dolorum fugit sunt. Fugit non saepe praesentium atque deserunt illo unde fugiat voluptate voluptas repellat. Mollitia error odit cumque aperiam architecto quam quasi distinctio deleniti, incidunt cupiditate sequi perspiciatis similique dolore facilis quod reprehenderit laudantium molestias excepturi veritatis tenetur dolorum, impedit saepe placeat atque. Modi ipsa soluta porro iure, ad deleniti doloremque ipsum placeat commodi officiis sapiente facilis voluptates, cum nihil quibusdam quam accusantium inventore impedit, esse quo consectetur? Soluta officia voluptas amet excepturi, eos cum, laborum libero animi quod repellendus dignissimos quos recusandae deserunt sapiente incidunt ipsam. Cupiditate optio suscipit porro molestiae placeat quidem, explicabo corporis rem libero, tempore assumenda fuga eligendi temporibus maiores laboriosam quisquam aliquid rerum. Nam repellendus delectus esse sint dicta!
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+    <!-- End Akhir -->
+
+  </section>
+  
+  
+
+
+  
+</body>
+
+<!-- bootstrap js -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</html>

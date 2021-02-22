@@ -1,0 +1,102 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+.mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.container {
+  height: 90vh;
+  display: grid;
+  gap: 8px;
+  grid-template-areas:
+    "header header"
+    "kop kop "
+    "nomor tanggal"
+    "lampiran tanggal "
+    "perihal tanggal "
+    "tujuan tujuan "
+    "pembuka pembuka "
+    "isi isi "
+    "penutup penutup "
+    "akhir akhir";
+  grid-template-rows: auto 0.4fr repeat(3, 0.15fr) 0.3fr 0.2fr 0.7fr 0.2fr 0.25fr;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 70vw;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 35vw;
+  }
+}
+
+.struktur {
+  color: white;
+  font-size: 1.1em;
+  position: relative;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1;
+}
+.struktur:hover {
+  z-index: 2;
+  transform: scale(1.05);
+}
+
+.header {
+  grid-area: header;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+}
+.kop-surat {
+  grid-area: kop;
+  background-color: #007bff;
+}
+.tanggal {
+  grid-area: tanggal;
+  background-color: #fd7e14;
+}
+.nomor {
+  grid-area: nomor;
+  background-color: #e83e8c;
+}
+.lampiran {
+  grid-area: lampiran;
+  background-color: #e83e8c;
+}
+.perihal {
+  grid-area: perihal;
+  background-color: #e83e8c;
+}
+.tujuan {
+  grid-area: tujuan;
+  background-color: #28a745;
+}
+.pembuka {
+  grid-area: pembuka;
+  background-color: #6f42c1;
+}
+.isi {
+  grid-area: isi;
+  background-color: #6f42c1;
+}
+.penutup {
+  grid-area: penutup;
+  background-color: #6f42c1;
+}
+.akhir-surat {
+  grid-area: akhir;
+  background-color: #343a40;
+}
